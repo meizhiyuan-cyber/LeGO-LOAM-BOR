@@ -12,7 +12,8 @@
 
     <!--- LeGO-LOAM -->    
     <arg name="rosbag"  default=""/>
-    <arg name="lidar_topic" default="/velodyne_points"/>
+    <arg name="lidar_topic" default="/lslidar_point_cloud"/>
+    <arg name="imu_topic"  default=""/>
 
     <rosparam file="$(find lego_loam_bor)/config/loam_config.yaml" command="load"/>
 
